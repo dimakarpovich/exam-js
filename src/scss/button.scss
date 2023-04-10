@@ -1,0 +1,27 @@
+.button {
+  border: none;
+  background: none;
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  top: 55%;
+  transform: translate(-50%, -50%);
+  cursor: pointer;
+  &__next {
+    left: 98%;
+    &_bg {
+      background-color: hsla(142, 50%, 36%, 0.5);
+    }
+  }
+  &__prev {
+    left: 2%;
+    &_bg {
+      background-color: hsla(142, 50%, 36%, 0.5);
+    }
+  }
+
+  &__img {
+    transform: rotateY(180deg);
+  }
+
+}

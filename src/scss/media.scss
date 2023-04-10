@@ -1,0 +1,41 @@
+@media (max-width: 769px) {
+  .list__item {
+    width: 33%;
+  }
+}
+@media (max-width: 650px) {
+  .button__next {
+    left: 96%;
+  }
+  .button__prev {
+    left: 4%;
+  }
+}
+@media (max-width: 560px) {
+  .slider__title {
+    font-size: 20px;
+  }
+  .api__wrapper {
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 20px;
+  }
+  .list__item {
+    width: 50%;
+  }
+}
+@media (max-width: 426px) {
+  .slider__descr {
+    margin-top: 5px;
+  }
+  .button {
+    width: 28px;
+    height: 28px;
+  }
+  .button__next {
+    left: 94%;
+  }
+  .button__prev {
+    left: 6%;
+  }
+}

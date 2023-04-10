@@ -1,1 +1,19 @@
 @import "reset";
+@import "slider";
+@import "carusel";
+@import "button";
+@import "popup";
+@import "animation";
+@import "search";
+@import "media";
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding:  30px;
+}
+.title {
+  text-align: center;
+  margin-bottom: 15px;
+  font-size: 30px;
+  font-weight: bold;
+}
