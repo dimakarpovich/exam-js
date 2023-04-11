@@ -41,8 +41,18 @@ window.addEventListener('DOMContentLoaded', function () {
         list = document.querySelector('.list__item'),
         imgs = document.querySelectorAll('.list__img'),
         btnNext = document.querySelector('.button__next_cr'),
-        btnPrev = document.querySelector('.button__prev_cr'),
-
+        btnPrev = document.querySelector('.button__prev_cr');
+  const animate = function () {
+    imgs.forEach((img) =>img.animate([
+    {transform: 'rotateY(0)'},
+    {transform: 'rotateY(25deg)'},
+    {transform: 'rotateY(50deg)'},
+    {transform: 'rotateY(25deg)'},
+    {transform: 'rotateY(0)'}
+    ],{
+    duration: 2000,
+     }));
+  }
   listWidth = list.offsetWidth;
   console.log(list.length);
   btnNext.addEventListener('click', ()=>{
@@ -55,9 +65,10 @@ window.addEventListener('DOMContentLoaded', function () {
     carusel.scrollTo({ left: carusel.scrollLeft - listWidth,
       behavior: "smooth",
     });
-
     console.log(carusel.scrollLeft);
   });
+  btnNext.addEventListener('click', animate);
+  btnPrev.addEventListener('click', animate);
   function windowOpen (e) {
     e.preventDefault();
     let src = e.srcElement.attributes[0].nodeValue,
